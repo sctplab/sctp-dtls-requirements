@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-model href="rfc7991bis.rnc"?>
+<?rfc toc='yes'?>
+<?rfc compact='yes'?>
+<?rfc subcompact='no'?>
+
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude"
+     xml:lang="en"
+     ipr="trust200902"
+     submissionType="IETF"
+     consensus="true"
+     category="info"
+     version="3">
+
+<front>
+<title abbrev='SCTP-DTLS Requirements'>
+Requirements for Securing SCTP Traffic using DTLS
+</title>
+<seriesInfo name="Internet-Draft"
+            value="draft-tuexen-tsvwg-sctp-dtls-req-00-to-be"/>
+
+<author initials="M." surname="Tüxen" fullname="Michael Tüxen" role="editor">
+  <organization abbrev='Münster Univ. of Appl. Sciences'>
+                Münster University of Applied Sciences</organization>
+  <address>
+    <postal>
+        <street>Stegerwaldstrasse 39</street>
+        <city>48565 Steinfurt</city>
+        <country>Germany</country>
+    </postal>
+    <email>tuexen@fh-muenster.de</email>
+  </address>
+</author>
+
+
+<date />
+
+<abstract>
+<t>The current specification of DTLS over SCTP is outdated and does not
+fulfill the requirements of 3GPP.
+This Internet Draft documents the requirements of 3GPP for securing SCTP based
+communications using DTLS.
+It is a results of a design team in TSVWG.</t>
+</abstract>
+</front>
+
+<middle>
+
+<section>
+<name>Functional Requirements for SCTP</name>
+<ul>
+<li><t>An SCTP implementation must support at least two streams used for
+reliable and in-sequence delivery.</t></li>
+<li><t>Message size of at least 1 GB must be supported.
+It is known that currently user message size of 0.5 MB are in use.</t></li>
+<li><t>Multihoming must be supported.
+However, support or dynamic address reconfiguration as specified in
+<xref target="RFC5061"/> is not required.</t></li>
+<li><t>The restart procedure must be supported.</t></li>
+<li><t>Protocol mechanisms should not limit the availability of the
+communication (like the draining procedure in <xref target="RFC6083"/>).</t></li>
+</ul>
+</section>
+
+<section>
+<name>Implementation Considerations for SCTP</name>
+<ul>
+<li><t>User message sizes must not be limited by an protocol implementation
+(for example the size of send or receive buffers).</t></li>
+<li><t>It is preferred to be able to use open source SCTP implementations.</t></li>
+</ul>
+</section>
+
+<section>
+<name>Security Requirements</name>
+<ul>
+<li><t>Mutual authentication must be used with periodic re-authentication
+allowing a certificate update.</t></li>
+<li><t>It must the possible to run DH once per hour or every 100GB.</t></li>
+<li><t>Capabilities of an attacker still under discussion.</t></li>
+<li><t>SCTP restart procedure should not allow attacks.
+Still under discussion.</t></li>
+</ul>
+</section>
+
+<section>
+<name>IANA Considerations</name>
+<t>No actions from IANA required.</t>
+</section>
+
+<section>
+<name>Security Considerations</name>
+<t>TBD.</t>
+</section>
+
+</middle>
+
+<back>
+<references>
+<name>References</name>
+<references>
+<name>Informative References</name>
+<xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.5061.xml"/>
+<xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6083.xml"/>
+<xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.9260.xml"/>
+</references>
+
+</references>
+
+<section numbered='false'>
+<name>Acknowledgments</name>
+<t>The following people were participating the design team:
+<contact fullname="Marcelo Ricardo Leitner"/>,
+<contact fullname="Xin Ling"/>,
+<contact fullname="John Mattsson"/>
+<contact fullname="Claudio Porfiri"/>,
+<contact fullname="Tirumaleswar Reddy.K"/>,
+<contact fullname="Zahed Sarker"/>,
+<contact fullname="Hannes Tschofenig"/>
+<contact fullname="Michael Tüxen"/>, and
+<contact fullname="Magnus Westerlund"/>.</t>
+</section>
+</back>
+</rfc>
