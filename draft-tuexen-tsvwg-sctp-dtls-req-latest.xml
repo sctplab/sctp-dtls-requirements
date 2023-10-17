@@ -4,7 +4,8 @@
 <?rfc compact='yes'?>
 <?rfc subcompact='no'?>
 
-<rfc xmlns:xi="http://www.w3.org/2001/XInclude"
+<rfc docName="draft-tuexen-tsvwg-sctp-dtls-req-latest"
+     xmlns:xi="http://www.w3.org/2001/XInclude"
      xml:lang="en"
      ipr="trust200902"
      submissionType="IETF"
