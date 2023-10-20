@@ -53,7 +53,10 @@ It is a results of a design team in TSVWG.</t>
 <li><t>An SCTP implementation must support at least two streams used for
 reliable and in-sequence delivery.</t></li>
 <li><t>Message size of at least 1 GB must be supported.
-It is known that currently user message size of 0.5 MB are in use.</t></li>
+It is known that currently user message size of 0.5 MB are in use.
+Liaison statement from 3GPP RAN3 <xref target="LS-RAN3"/> stated "RAN3 would like to confirm our previous LS: we do not expect to limit the
+maximum message size of application protocols. For this reason, any solution
+with a limit on message size will not meet RAN3 requirements."</t></li>
 <li><t>Multihoming must be supported.
 However, support or dynamic address reconfiguration as specified in
 <xref target="RFC5061"/> is not required.</t></li>
@@ -104,6 +107,14 @@ Still under discussion.</t></li>
 <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.5061.xml"/>
 <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.6083.xml"/>
 <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.9260.xml"/>
+<reference anchor="LS-RAN3">
+    <front>
+      <title>Liaison statement: Reply LS on DTLS for SCTP next steps and request for input</title>
+      <author fullname="3GPP RAN3"/>
+      <date year="2023" month="Aug"/>
+    </front>
+    <refcontent>https://datatracker.ietf.org/liaison/1858/</refcontent>
+  </reference>
 </references>
 
 </references>
