@@ -4,7 +4,7 @@
 <?rfc compact='yes'?>
 <?rfc subcompact='no'?>
 
-<rfc docName="draft-tuexen-tsvwg-sctp-dtls-req-latest"
+<rfc docName="draft-tuexen-tsvwg-sctp-dtls-req-00"
      xmlns:xi="http://www.w3.org/2001/XInclude"
      xml:lang="en"
      ipr="trust200902"
@@ -18,7 +18,7 @@
 Requirements for Securing SCTP Traffic using DTLS
 </title>
 <seriesInfo name="Internet-Draft"
-            value="draft-tuexen-tsvwg-sctp-dtls-req-00-to-be"/>
+            value="draft-tuexen-tsvwg-sctp-dtls-req-00"/>
 
 <author initials="M." surname="Tüxen" fullname="Michael Tüxen" role="editor">
   <organization abbrev='Münster Univ. of Appl. Sciences'>
@@ -41,11 +41,28 @@ Requirements for Securing SCTP Traffic using DTLS
 fulfill the requirements of 3GPP.
 This Internet Draft documents the requirements of 3GPP for securing SCTP based
 communications using DTLS.
-It is a result of a design team in TSVWG.</t>
+It is a result of a design team in TSVWG and reflects the current of its work.
+Therefore, this document is expected to change over time.</t>
 </abstract>
 </front>
 
 <middle>
+
+<section>
+<name>Introduction</name>
+<t>This document reflects the current status of a design team in TSVWG working
+on the requirements of securing SCTP based traffic using DTLS.</t>
+<t>The following people were participating the design team:
+<contact fullname="Marcelo Ricardo Leitner"/>,
+<contact fullname="Xin Ling"/>,
+<contact fullname="John Mattsson"/>
+<contact fullname="Claudio Porfiri"/>,
+<contact fullname="Tirumaleswar Reddy.K"/>,
+<contact fullname="Zahed Sarker"/>,
+<contact fullname="Hannes Tschofenig"/>
+<contact fullname="Michael Tüxen"/>, and
+<contact fullname="Magnus Westerlund"/>.</t>
+</section>
 
 <section>
 <name>Functional Requirements for SCTP</name>
@@ -134,18 +151,5 @@ an SCTP association by an attacker.</t></li>
 
 </references>
 
-<section numbered='false'>
-<name>Acknowledgments</name>
-<t>The following people were participating the design team:
-<contact fullname="Marcelo Ricardo Leitner"/>,
-<contact fullname="Xin Ling"/>,
-<contact fullname="John Mattsson"/>
-<contact fullname="Claudio Porfiri"/>,
-<contact fullname="Tirumaleswar Reddy.K"/>,
-<contact fullname="Zahed Sarker"/>,
-<contact fullname="Hannes Tschofenig"/>
-<contact fullname="Michael Tüxen"/>, and
-<contact fullname="Magnus Westerlund"/>.</t>
-</section>
 </back>
 </rfc>
