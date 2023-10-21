@@ -103,8 +103,8 @@ allowing a certificate update.</t></li>
 <li><t>Privacy and integrity is required for user data.</t></li>
 <li><t>An on-path attacker being able to drop packets might be able to drop
 the association.</t></li>
-<li><t>An on-path attacker being able to replay messages, inserts messages,
-or modifies messages must not be able to affect te availability of the
+<li><t>An on-path attacker being able to replay messages, insert messages,
+or modify messages must not be able to affect the availability of the
 association or change user data.</t></li>
 <li><t>In particular, the SCTP restart procedure must not allow to take over
 an SCTP association by an attacker.</t></li>
