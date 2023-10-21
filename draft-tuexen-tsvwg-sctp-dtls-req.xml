@@ -54,7 +54,7 @@ Therefore, this document is expected to change over time.</t>
 on the requirements of securing SCTP based traffic using DTLS.</t>
 <t>The following people were participating the design team:
 <contact fullname="Marcelo Ricardo Leitner"/>,
-<contact fullname="Xin Ling"/>,
+<contact fullname="Xin Long"/>,
 <contact fullname="John Mattsson"/>
 <contact fullname="Claudio Porfiri"/>,
 <contact fullname="Tirumaleswar Reddy.K"/>,
