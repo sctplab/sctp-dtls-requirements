@@ -4,7 +4,7 @@
 <?rfc compact='yes'?>
 <?rfc subcompact='no'?>
 
-<rfc docName="draft-tuexen-tsvwg-sctp-dtls-req-00"
+<rfc docName="draft-tuexen-tsvwg-sctp-dtls-req-01-to-be"
      xmlns:xi="http://www.w3.org/2001/XInclude"
      xml:lang="en"
      ipr="trust200902"
@@ -18,7 +18,7 @@
 Requirements for Securing SCTP Traffic using DTLS
 </title>
 <seriesInfo name="Internet-Draft"
-            value="draft-tuexen-tsvwg-sctp-dtls-req-00"/>
+            value="draft-tuexen-tsvwg-sctp-dtls-req-01-to-be"/>
 
 <author initials="M." surname="Tüxen" fullname="Michael Tüxen" role="editor">
   <organization abbrev='Münster Univ. of Appl. Sciences'>
@@ -55,11 +55,11 @@ on the requirements of securing SCTP based traffic using DTLS.</t>
 <t>The following people were participating the design team:
 <contact fullname="Marcelo Ricardo Leitner"/>,
 <contact fullname="Xin Long"/>,
-<contact fullname="John Mattsson"/>
+<contact fullname="John Mattsson"/>,
 <contact fullname="Claudio Porfiri"/>,
 <contact fullname="Tirumaleswar Reddy.K"/>,
 <contact fullname="Zahed Sarker"/>,
-<contact fullname="Hannes Tschofenig"/>
+<contact fullname="Hannes Tschofenig"/>,
 <contact fullname="Michael Tüxen"/>, and
 <contact fullname="Magnus Westerlund"/>.</t>
 </section>
