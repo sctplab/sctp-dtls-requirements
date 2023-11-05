@@ -2,16 +2,16 @@
 
 This is the working area for the individual Internet-Draft, "Requirements for Securing SCTP Traffic using DTLS".
 
-* [Editor's Copy](https://github.com.github.io/sctplab/#go.draft-tuexen-tsvwg-sctp-dtls-req.html)
+* [Editor's Copy](https://sctplab.github.io/sctp-dtls-requirements/#go.draft-tuexen-tsvwg-sctp-dtls-req.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-tuexen-tsvwg-sctp-dtls-req)
 * [Individual Draft](https://datatracker.ietf.org/doc/html/draft-tuexen-tsvwg-sctp-dtls-req)
-* [Compare Editor's Copy to Individual Draft](https://github.com.github.io/sctplab/#go.draft-tuexen-tsvwg-sctp-dtls-req.diff)
+* [Compare Editor's Copy to Individual Draft](https://sctplab.github.io/sctp-dtls-requirements/#go.draft-tuexen-tsvwg-sctp-dtls-req.diff)
 
 
 ## Contributing
 
 See the
-[guidelines for contributions](https://github.com/github.com/sctplab/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/sctplab/sctp-dtls-requirements/blob/main/CONTRIBUTING.md).
 
 Contributions can be made by creating pull requests.
 The GitHub interface supports creating pull requests using the Edit (✏) button.
