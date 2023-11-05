@@ -1,0 +1,171 @@
+
+
+
+
+Network Working Group                                      M. Tüxen, Ed.
+Internet-Draft                           Münster Univ. of Appl. Sciences
+Intended status: Informational                           5 November 2023
+Expires: 8 May 2024
+
+
+           Requirements for Securing SCTP Traffic using DTLS
+                draft-tuexen-tsvwg-sctp-dtls-req-latest
+
+Abstract
+
+   The current specification of DTLS over SCTP is outdated and does not
+   fulfill the requirements of 3GPP.  This Internet Draft documents the
+   requirements of 3GPP for securing SCTP based communications using
+   DTLS.  It is a result of a design team in TSVWG and reflects the
+   current of its work.  Therefore, this document is expected to change
+   over time.
+
+Status of This Memo
+
+   This Internet-Draft is submitted in full conformance with the
+   provisions of BCP 78 and BCP 79.
+
+   Internet-Drafts are working documents of the Internet Engineering
+   Task Force (IETF).  Note that other groups may also distribute
+   working documents as Internet-Drafts.  The list of current Internet-
+   Drafts is at https://datatracker.ietf.org/drafts/current/.
+
+   Internet-Drafts are draft documents valid for a maximum of six months
+   and may be updated, replaced, or obsoleted by other documents at any
+   time.  It is inappropriate to use Internet-Drafts as reference
+   material or to cite them other than as "work in progress."
+
+   This Internet-Draft will expire on 8 May 2024.
+
+Copyright Notice
+
+   Copyright (c) 2023 IETF Trust and the persons identified as the
+   document authors.  All rights reserved.
+
+   This document is subject to BCP 78 and the IETF Trust's Legal
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
+
+Table of Contents
+
+   1.  Introduction
+   2.  Functional Requirements for SCTP
+   3.  Implementation Considerations for SCTP
+   4.  Security Requirements
+   5.  Implementation Considerations for DTLS
+   6.  IANA Considerations
+   7.  Security Considerations
+   8.  References
+     8.1.  Informative References
+   Author's Address
+
+1.  Introduction
+
+   This document reflects the current status of a design team in TSVWG
+   working on the requirements of securing SCTP based traffic using
+   DTLS.
+
+   The following people were participating the design team: Marcelo
+   Ricardo Leitner, Xin Long, John Mattsson, Claudio Porfiri,
+   Tirumaleswar Reddy.K, Zahed Sarker, Hannes Tschofenig, Michael Tüxen,
+   and Magnus Westerlund.
+
+2.  Functional Requirements for SCTP
+
+   *  An SCTP implementation must support at least two streams used for
+      reliable and in-sequence delivery.
+
+   *  Message size of at least 1 GB must be supported.  It is known that
+      currently user message size of 0.5 MB are in use.  Liaison
+      statement from 3GPP RAN3 [LS-RAN3] stated "RAN3 would like to
+      confirm our previous LS: we do not expect to limit the maximum
+      message size of application protocols.  For this reason, any
+      solution with a limit on message size will not meet RAN3
+      requirements."
+
+   *  Multihoming must be supported.  However, support or dynamic
+      address reconfiguration as specified in [RFC5061] is not required.
+
+   *  The restart procedure must be supported.
+
+   *  Protocol mechanisms should not limit the availability of the
+      communication (like the draining procedure in [RFC6083]).
+
+3.  Implementation Considerations for SCTP
+
+   *  User message sizes must not be limited by an protocol
+      implementation (for example the size of send or receive buffers).
+
+   *  For some it is preferred to be able to use open source kernel SCTP
+      implementations.
+
+4.  Security Requirements
+
+   *  Mutual authentication must be used with periodic re-authentication
+      allowing a certificate update.
+
+   *  It must the possible to run DH once per hour or every 100GB.
+
+   *  Privacy and integrity is required for user data.
+
+   *  An on-path attacker being able to drop packets might be able to
+      drop the association.
+
+   *  An on-path attacker being able to replay messages, insert
+      messages, or modify messages must not be able to affect the
+      availability of the association or change user data.
+
+   *  In particular, the SCTP restart procedure must not allow to take
+      over an SCTP association by an attacker.
+
+5.  Implementation Considerations for DTLS
+
+   *  Focus on DTLS 1.3 only.
+
+   *  For some it is preferred to use unmodified DTLS implementations.
+
+6.  IANA Considerations
+
+   No actions from IANA required.
+
+7.  Security Considerations
+
+   TBD.
+
+8.  References
+
+8.1.  Informative References
+
+   [RFC5061]  Stewart, R., Xie, Q., Tuexen, M., Maruyama, S., and M.
+              Kozuka, "Stream Control Transmission Protocol (SCTP)
+              Dynamic Address Reconfiguration", RFC 5061,
+              DOI 10.17487/RFC5061, September 2007,
+              <https://www.rfc-editor.org/info/rfc5061>.
+
+   [RFC6083]  Tuexen, M., Seggelmann, R., and E. Rescorla, "Datagram
+              Transport Layer Security (DTLS) for Stream Control
+              Transmission Protocol (SCTP)", RFC 6083,
+              DOI 10.17487/RFC6083, January 2011,
+              <https://www.rfc-editor.org/info/rfc6083>.
+
+   [RFC9260]  Stewart, R., Tüxen, M., and K. Nielsen, "Stream Control
+              Transmission Protocol", RFC 9260, DOI 10.17487/RFC9260,
+              June 2022, <https://www.rfc-editor.org/info/rfc9260>.
+
+   [LS-RAN3]  RAN3, 3., "Liaison statement: Reply LS on DTLS for SCTP
+              next steps and request for input",
+              https://datatracker.ietf.org/liaison/1858/, August 2023.
+
+Author's Address
+
+   Michael Tüxen (editor)
+   Münster University of Applied Sciences
+   Stegerwaldstrasse 39
+   48565 Steinfurt
+   Germany
+   Email: tuexen@fh-muenster.de
