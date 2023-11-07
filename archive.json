@@ -1,0 +1,147 @@
+{
+  "magic": "E!vIA5L86J2I",
+  "timestamp": "2023-11-07T01:11:36.211064+00:00",
+  "repo": "sctplab/sctp-dtls-requirements",
+  "labels": [
+    {
+      "name": "bug",
+      "description": "Something isn't working",
+      "color": "d73a4a"
+    },
+    {
+      "name": "documentation",
+      "description": "Improvements or additions to documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "description": "This issue or pull request already exists",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "description": "New feature or request",
+      "color": "a2eeef"
+    },
+    {
+      "name": "good first issue",
+      "description": "Good for newcomers",
+      "color": "7057ff"
+    },
+    {
+      "name": "help wanted",
+      "description": "Extra attention is needed",
+      "color": "008672"
+    },
+    {
+      "name": "invalid",
+      "description": "This doesn't seem right",
+      "color": "e4e669"
+    },
+    {
+      "name": "question",
+      "description": "Further information is requested",
+      "color": "d876e3"
+    },
+    {
+      "name": "wontfix",
+      "description": "This will not be worked on",
+      "color": "ffffff"
+    }
+  ],
+  "issues": [],
+  "pulls": [
+    {
+      "number": 1,
+      "id": "PR_kwDOKgSbd85dX9N8",
+      "title": "Adding reference to RAN3 LS on unbound message size.",
+      "url": "https://github.com/sctplab/sctp-dtls-requirements/pull/1",
+      "state": "MERGED",
+      "author": "gloinul",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-10-20T11:58:13Z",
+      "updatedAt": "2023-10-21T11:13:37Z",
+      "baseRepository": "sctplab/sctp-dtls-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "11769713b848df4bed12455a09144ddab46790c0",
+      "headRepository": "sctplab/sctp-dtls-requirements",
+      "headRefName": "mw-proposal",
+      "headRefOid": "93cb7a21781d65834f25d426426a4bbb3e7d720c",
+      "closedAt": "2023-10-20T13:06:32Z",
+      "mergedAt": "2023-10-20T13:06:32Z",
+      "mergedBy": "tuexen",
+      "mergeCommit": {
+        "oid": "f1a913e3f7b7b4065a5c7f25a4fa1fae573b9194"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 2,
+      "id": "PR_kwDOKgSbd85dZ58i",
+      "title": "Fix typo in Xin Long's name",
+      "url": "https://github.com/sctplab/sctp-dtls-requirements/pull/2",
+      "state": "MERGED",
+      "author": "marceloleitner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-10-20T16:58:49Z",
+      "updatedAt": "2023-10-21T11:11:55Z",
+      "baseRepository": "sctplab/sctp-dtls-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "635d4abfca495d624f11470ded8a95d5eb5ed64c",
+      "headRepository": "sctplab/sctp-dtls-requirements",
+      "headRefName": "xin-name",
+      "headRefOid": "17441fae58ba03ebc85906931b950072d0b5ae02",
+      "closedAt": "2023-10-21T11:11:49Z",
+      "mergedAt": "2023-10-21T11:11:49Z",
+      "mergedBy": "tuexen",
+      "mergeCommit": {
+        "oid": "593b431a616c1d315b8de66395708475b960bd0f"
+      },
+      "comments": [],
+      "reviews": []
+    },
+    {
+      "number": 3,
+      "id": "PR_kwDOKgSbd85dZ6IG",
+      "title": "Small english tweaks",
+      "url": "https://github.com/sctplab/sctp-dtls-requirements/pull/3",
+      "state": "MERGED",
+      "author": "marceloleitner",
+      "authorAssociation": "CONTRIBUTOR",
+      "assignees": [],
+      "labels": [],
+      "body": "",
+      "createdAt": "2023-10-20T16:59:32Z",
+      "updatedAt": "2023-10-21T11:12:56Z",
+      "baseRepository": "sctplab/sctp-dtls-requirements",
+      "baseRefName": "main",
+      "baseRefOid": "635d4abfca495d624f11470ded8a95d5eb5ed64c",
+      "headRepository": "sctplab/sctp-dtls-requirements",
+      "headRefName": "ml-english",
+      "headRefOid": "55c405a9566f9e892510e36d9b094b160ca11044",
+      "closedAt": "2023-10-21T11:12:48Z",
+      "mergedAt": "2023-10-21T11:12:48Z",
+      "mergedBy": "tuexen",
+      "mergeCommit": {
+        "oid": "ab53641a7db7e6265d4c16c226a253aff0542541"
+      },
+      "comments": [
+        {
+          "author": "marceloleitner",
+          "authorAssociation": "CONTRIBUTOR",
+          "body": "I based this MR on top of previous one, btw.",
+          "createdAt": "2023-10-20T17:00:13Z",
+          "updatedAt": "2023-10-20T17:00:13Z"
+        }
+      ],
+      "reviews": []
+    }
+  ]
+}
