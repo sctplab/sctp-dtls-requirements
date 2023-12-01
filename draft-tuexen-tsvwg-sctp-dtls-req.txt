@@ -4,8 +4,8 @@
 
 Network Working Group                                      M. Tüxen, Ed.
 Internet-Draft                           Münster Univ. of Appl. Sciences
-Intended status: Informational                          24 November 2023
-Expires: 27 May 2024
+Intended status: Informational                           1 December 2023
+Expires: 3 June 2024
 
 
            Requirements for Securing SCTP Traffic using DTLS
@@ -35,7 +35,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 27 May 2024.
+   This Internet-Draft will expire on 3 June 2024.
 
 Copyright Notice
 
